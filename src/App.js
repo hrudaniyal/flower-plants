@@ -11,7 +11,7 @@ function App() {
     apiCall()
   },[])
   const apiCall = ()=>{
-    axios.get(`https://api.unsplash.com/search/photos?page=20&X-Ratelimit-Limit=30&query=flower&client_id=${key}`).then(res=>{
+    axios.get(`https://api.unsplash.com/search/photos?page=3&query=flower&client_id=${key}`).then(res=>{
       setResult(res.data.results)
     })
   }
@@ -33,7 +33,12 @@ function App() {
                 </div>
                 <div className='show_des'>
                 <h4>{data.alt_description}</h4>
-                <p>{data.alt_description}</p>
+                <p>{data.description}</p>
+                <pre>{data.user.bio}</pre>
+                <div style={{display:"flex",padding:'10px'}}>
+                <img src={data.user.profile_image.small} style={{display:"flex",alignItems:"center",height:"50px",width:"50px", borderRadius:"50px"}} alt={data.user.first_name} />
+                  <h6 style={{marginLeft:"10px"}}>{data.user.first_name}</h6>
+                </div>
                 <button>START</button>
                 </div>
             </div>
