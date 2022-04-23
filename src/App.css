@@ -1,8 +1,21 @@
 body{
-  color: white;
+  margin:0 70px;
 }
 .heading{
+  color: white;
+
   padding: 100px;
   line-height: 20px;
   background: black;
+}
+.img_des{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.show_img{
+   width: 100%;
+}
+.show_des{
+  padding: 30px;
 }
