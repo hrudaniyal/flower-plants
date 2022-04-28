@@ -1,0 +1,27 @@
+.aboutus_container h3{
+    padding: 10px;
+    color: crimson;
+   
+}
+.aboutus_container p{
+    line-height: 30px;
+    margin: 0 auto;
+    width: 90%;
+}
+ 
+.small_circle{
+    display: block;
+    width: 6px;
+    height: 6px;
+    padding: 6px;
+    border-radius: 100%;
+    background: crimson;
+}
+.we_does_list li{
+    list-style-type: none ;
+    display: flex;
+    align-items: center;
+}
+.we_does_list li span{
+    margin-right: 10px;
+}

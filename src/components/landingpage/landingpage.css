@@ -1,0 +1,90 @@
+/* LANDING PAGE CONTAINER SECTION */
+.landing_container {
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.landing_back {
+    z-index: -100;
+    max-height: 100vh;
+    overflow: hidden;
+    position: absolute;
+}
+
+.back_image {
+    width: 100%;
+    filter: brightness(.1);
+    transition: all .6s;
+}
+
+.landing_front {
+    z-index: 100;
+    color: white;
+    display: flex;
+
+}
+
+.front_image {
+    width: 90%;
+    height: 90%;
+    border-radius: 10%;
+}
+
+.left,
+.right {
+    padding: 30px;
+}
+
+
+/* LANDING PAGE SOMETHING FOR YOU SECTION */
+.for_section {
+    text-align: center;
+    padding: 150px;
+}
+
+.for_front {
+    z-index: 100;
+    color: white;
+}
+
+.for_image {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 20px;
+    transition: all .6s;
+}
+.for_image:hover{
+    transform: scale(1.2);
+}
+@media  screen and (max-width:880px){
+    body{
+        background: black;
+        color: white;
+    }
+    .landing_front{
+      display: list-item;
+    }
+    .landing_back{
+        max-width: fit-content;
+        background-color: black;
+    }
+    .landing_front{
+        padding: 20px;
+    }
+    .front_image{
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+        margin-top: 40px;
+    }
+    .back_image{
+display: none;
+    }
+    .left,.right{
+        padding: 4px;
+    }
+    .for_section{
+        padding: 10px;
+    }
+}
