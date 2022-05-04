@@ -10,20 +10,16 @@
     overflow: hidden;
     position: absolute;
 }
-
 .back_image {
     width: 100%;
     filter: brightness(.1);
     transition: all .6s;
 }
-
 .landing_front {
     z-index: 100;
     color: white;
     display: flex;
-
 }
-
 .front_image {
     width: 90%;
     height: 90%;
@@ -34,19 +30,15 @@
 .right {
     padding: 30px;
 }
-
-
 /* LANDING PAGE SOMETHING FOR YOU SECTION */
 .for_section {
     text-align: center;
     padding: 150px;
 }
-
 .for_front {
     z-index: 100;
     color: white;
 }
-
 .for_image {
     width: 100px;
     height: 100px;
@@ -57,6 +49,7 @@
 .for_image:hover{
     transform: scale(1.2);
 }
+/* RESPONCIVE DESIGN TAB */
 @media  screen and (max-width:880px){
     body{
         background: black;
@@ -79,7 +72,7 @@
         margin-top: 40px;
     }
     .back_image{
-display: none;
+        display: none;
     }
     .left,.right{
         padding: 4px;
@@ -87,4 +80,11 @@ display: none;
     .for_section{
         padding: 10px;
     }
+}
+/* RESPONSIVE DESIGN MOBILE */
+
+@media screen and  (min-width:450px) {
+  *{
+    box-sizing:content-box;
+  }
 }

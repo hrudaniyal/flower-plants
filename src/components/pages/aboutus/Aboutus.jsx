@@ -31,11 +31,18 @@ function Aboutus() {
       <div className="location">
         <h3>LOCATION</h3>
         <div className="location_viewer">
-
+          <div className="map_demo"></div>
         </div>
       </div>
       <h3>LETS JOIN WITH US</h3>
+      <div className='social_container'>
+        <li className='social_link'></li>
+        <li className='social_link'></li>
+        <li className='social_link'></li>
+        <li className='social_link'></li>
+        <li className='social_link'></li>
 
+      </div>
     </div>
   )
 }
